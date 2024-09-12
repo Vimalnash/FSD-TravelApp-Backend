@@ -21,7 +21,7 @@ const sendMessageEmail = async (fullName, email, message) => {
             <h3>Message from ${fullName}</h3>
             <p>My Email: ${email}<p/>
             <p>Message: ${message}<p/>
-            <a href="https:///">
+            <a href="https://tripworld.netlify.app/">
                 Mail Received from - TripWorld
             </a>
         </div>
@@ -58,7 +58,7 @@ const sendActivationEmail = async (email, token) => {
         html: `
         <h3>Activation Link</h3>
         <p>Click on the Below link / Copy and Pase it in your browser</p>
-        <a href="https://localhost:5173/useractivation?activate=${token}">
+        <a href="https://tripworld.netlify.app/useractivation?activate=${token}">
             Click to Activate to login
         </a>
         `
@@ -94,7 +94,7 @@ const resetPasswordEmail = async (email, token) => {
         html: `
         <h3>Reset Link</h3>
         <p>Click on the Below link / Copy and Pase it in your browser</p>
-        <a href="https://localhost:5173/resetpasswordlink?auth=${token}">
+        <a href="https://tripworld.netlify.app/resetpasswordlink?auth=${token}">
             Click to ResetPassword
         </a>
         `
